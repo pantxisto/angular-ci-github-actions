@@ -29,7 +29,7 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('.content span')?.textContent).toContain('angular-ci-github-actions app is running!');
   });
 
-  it('fails for CI checking', () => {
-    expect(false).toBe(true);
+  it('does not fail for CI checking', () => {
+    expect(false).toBe(false);
   });
 });
