@@ -28,4 +28,8 @@ describe('AppComponent', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('.content span')?.textContent).toContain('angular-ci-github-actions app is running!');
   });
+
+  it('fails for CI checking', () => {
+    expect(false).toBe(true);
+  });
 });
